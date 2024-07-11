@@ -1,0 +1,155 @@
+{"lQuestions" : [
+    {
+        "question": "What is your  unique Prolific ID?",
+        "name": "ProlificID",
+        "type": "shortOpen",
+        "blank": "False"   
+    }, 
+    {
+        "question": "What is your age?",
+        "name": "age",
+        "type": "shortOpen",
+        "validate": "validAge" ,
+        "invalidMessage": "warningAge"
+    },    
+    {
+        "question": "Which gender do you identify the most with?",
+        "name": "gender",
+        "type": "radio",
+        "direction": "horizontal wrap",
+        "values": [1,2,3,4],
+        "labels": [
+            "Female",
+            "Male",
+            "Other",
+            "Prefer not to say"]
+    },      
+    {
+        "question": "What is your nationality?",
+        "name": "nationality",
+        "type": "autocomplete",
+        "list": "countryList"
+    },
+    {
+        "question": "What is your monthly net household income, i.e., how much money do you have available in your household per month for living expenses? Please select your net household income from the menu.",
+        "name": "income",
+        "type": "radio",
+        "direction": "vertical wrap",
+        "values": [1,2,3,4,5],
+        "labels": ["less than 1,300 euros", "1,300 euros to under 2,599 euros","1,300 euros to under 2,599 euros","2,600 euros to under 4,599 euros"," more than 4,500 euros" ]
+    },
+    {
+        "question": "When there is a choice, I always choose the product that contributes to the least amount of environmental damage.",
+        "name": "Environmental_attitudes_1_ecobuy",
+        "type": "Likert",
+        "likertMax": 5,
+        "limits": ["Never True","Always True"],
+        "confirmRequired" : true
+    },
+    {
+        "question": "I have switched products for environmental reasons.",
+        "name": "Environmental_attitudes_2_ecobuy",
+        "type": "Likert",
+        "likertMax": 5,
+        "limits": ["Never True","Always True"],
+        "confirmRequired" : true
+    },
+    {
+        "question": "If I understand the potential damage to the environment that some products can cause, I do not purchase those products.",
+        "name": "Environmental_attitudes_3_ecobuy",
+        "type": "Likert",
+        "likertMax": 5,
+        "limits": ["Never True","Always True"],
+        "confirmRequired" : true
+    },
+    {
+        "question": "I do not buy household products that harm the environment.",
+        "name": "Environmental_attitudes_4_ecobuy",
+        "type": "Likert",
+        "likertMax": 5,
+        "limits": ["Never True","Always True"],
+        "confirmRequired" : true
+    },
+    {
+        "question": "I have paid more for environmentally friendly products even when there is a cheaper alternative",
+        "name": "Environmental_attitudes_9_paymore",
+        "type": "Likert",
+        "likertMax": 5,
+        "limits": ["Never True","Always True"],
+        "confirmRequired" : true
+    },
+    {
+        "question": "I have paid more for socially responsible products when there is a cheaper alternative.",
+        "name": "Environmental_attitudes_10_paymore",
+        "type": "Likert",
+        "likertMax": 5,
+        "limits": ["Never True","Always True"],
+        "confirmRequired" : true
+    },
+    {
+        "question": "To test if you are still with us, please check 'Always true'",
+        "name": "attention_check",
+        "type": "Likert",
+        "likertMax": 5,
+        "limits": ["Never True","Always True"],
+        "confirmRequired" : true
+    },
+    {
+        "question": "How much do environmental issues concern you in your everyday life?",
+        "name": "environment",
+        "type": "Likert",
+        "likertMax": 10,
+        "limits": ["Not concerned at all","Extremely concerned"],
+        "confirmRequired" : true
+    },    
+    {
+        "question": "I consider the CO₂e labels from the task to be credible.",
+        "name": "label_trust_1",
+        "type": "Likert",
+        "likertMax": 5,
+        "limits": ["Strongly Disagree","Strongly Agree"],
+        "confirmRequired" : true
+    },    
+    {
+        "question": "Labels on food do not matter to me.",
+        "name": "label_trust_2",
+        "type": "Likert",
+        "likertMax": 5,
+        "limits": ["Strongly Disagree","Strongly Agree"],
+        "confirmRequired" : true
+    },   
+    {
+        "question": "I have given up on informing myself about labels and buy the cheapest product.",
+        "name": "label_trust_3",
+        "type": "Likert",
+        "likertMax": 5,
+        "limits": ["Strongly Disagree","Strongly Agree"],
+        "confirmRequired" : true
+    },    
+    {
+        "question": "By buying green climate labelled products, I am doing something good for the climate.",
+        "name": "label_trust_4",
+        "type": "Likert",
+        "likertMax": 5,
+        "limits": ["Strongly Disagree","Strongly Agree"],
+        "confirmRequired" : true
+    },    
+    {
+        "question": "What was your impression of the labels (in terms of clarity, understanding, design, etc.)",
+        "name": "impression_open",
+        "type": "longOpen",
+        "blank": "True"   
+    },
+    {
+        "question": "To the best of your ability please provide an estimate of what the monetary cost (in euros) is of one kg of carbon emissions.)",
+        "name": "cost_open",
+        "type": "longOpen",
+        "blank": "True"   
+    },
+    {
+        "question": "The experiment is now over. Thank you for your participation! If you would like give any further comments or feedback feel free to do so in the box below.",
+        "name": "thank you",
+        "type": "shortOpen",
+        "blank": "True"   
+    }
+]}

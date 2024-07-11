@@ -1,0 +1,88 @@
+{{ extends "global/Slider.html" }}
+
+{{ block Slides }}
+    <input type="hidden" id="no-checks">
+
+    <div class="slide">
+        <div class="text-container">
+            <h1> Welcome! </h1>
+            <ul>
+                <li>Dear participant, thank you for your interest in the experiment! Before we begin, it is important that you are informed about the procedures so please read the following information carefully.</li>
+                <li>Your decisions and information provided will be recorded <b>anonymously</b>.</li>
+            </ul>  
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="text-container">
+            <h1> Purpose of the study and procedure:</h1>
+            <ul>
+                <li>The objective of this experiment is to better understand decision making in a food shopping context. We are very interested to hear your opinion and experiences, what and why you buy the foods you buy.</li>
+                <li>The task involves a simulated shopping task where you will be presented with 38 binary choices where you will be able to choose between supermarket products that vary in different characteristics.</li> 
+                <li>The study will last about <b>{{ C.AvgDur }} minutes</b>.</li>
+            </ul>
+        </div> 
+    </div>
+
+    <div class="slide">
+        <div class="text-container">
+            <h1> Voluntary Participation and Withdrawal </h1>
+            <ul>
+                <li>Your decision to participate in this study is completely voluntary.</li> 
+                <li>Participants must be <b>at least 18 years old</b> to take part in the study.</li>
+                <li>At any point during the experiment, you may choose to stop your participation and your data will be discarded.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="text-container">
+            <h1>Confidentiality</h1>
+            <ul>
+                <li>The only information collected in this experiment will be your answers to the task, which is anonymous.</li>
+                <li>The investigator will safely keep all collected data stored in protected storage.</li>      
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="text-container">
+            <p>To participate in this experiment you need to:</p>
+            <ul>
+                <li> Be <b>18 or older</b>. </li>
+                <li> Be fluent in <b>English</b>. </li>
+                <li> Focus only on the experiment (it will take around {{ C.AvgDur }} minutes).</li>
+                <li> Use your <b>computer</b>. The experiment does not work on phones or tablets. </li>
+                <li> Set this window into <b>Fullscreen</b> mode. </li>
+                <li> Agree to start with the experiment right away. </li>
+            </ul>
+            <p style='text-align: justify;'>
+                We reserve the right to exclude you from payment if we detect that you are not paying attention. 
+                (jumping between other windows or setting off the Fullscreen too many times) 
+                or you do not comply with any of the above-mentioned requirements.
+            </p>
+            <!-- Check box T&C -->
+            <div class="checkBox">
+                <input type="checkbox" required id="TC" name="TC" value="check">
+                <label for="TC"> I agree to the <u>Terms and Conditions</u> above and to participate in this experiment.</label>
+            </div>
+            <br>
+            <button class="btn-primary"> Submit </button>
+        </div>
+        <input type="hidden" name="timeOut" id="timeOut" value='false'>
+    </div>
+{{ endblock }}
+
+{% block app_scripts %}
+<script>
+    // Your custom JavaScript here
+</script>
+{% endblock %}
+
+{% block app_styles %}
+<style>
+    .otree-timer {
+        display: none;
+    }
+</style>
+{% endblock %}
