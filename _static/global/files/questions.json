@@ -3,7 +3,7 @@
         "question": "What is your  unique Prolific ID?",
         "name": "ProlificID",
         "type": "shortOpen",
-        "blank": "False"   
+        "blank": "True"   
     }, 
     {
         "question": "What is your age?",
